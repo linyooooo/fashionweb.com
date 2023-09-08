@@ -1,0 +1,610 @@
+/* ------------設定變數------------ */
+:root {
+    /* -----色彩命名----- */
+    --black: #000000ff;
+    --grey: #545454ff;
+    --silver: #6f6f6fff;
+    --spaninsh: #999999ff;
+    --gainsboro: #e0e0e0ff;
+    --white: #ffffffff;
+    --pink: #f18ab8ff;
+    --mimi: #f9cddeff;
+    --piggy: #fae4eeff;
+    --red: #ff0000ff;
+    --empty: ffffff00;
+    --info: #2f80edff;
+    --success: #27ae60ff;
+    --warning: #e2b93bff;
+    --error: #eb5757ff;
+
+    --melon: #FFB5A7ff;
+    --pale-dogwood: #FCD5CEff;
+    --seashell: #F8EDEBff;
+    --champagne-pink: #F9DCC4ff;
+    --peach: #FEC89Aff;
+
+    /* -----文字尺寸----- */
+    --h1: 30px;
+    --h2: 26px;
+    --h3: 24px;
+    --h4: 22px;
+    --h5: 20px;
+    --h6: 18px;
+    --normal: 16px;
+    --small: 14px;
+    --mini: 12px;
+
+    /* -----間距基準----- */
+    --spacing1: 8px;
+    --spacing2: 16px;
+    --spacing3: 24px;
+    --spacing4: 32px;
+    --spacing5: 40px;
+    --spacing6: 56px;
+    --spacing7: 72px;
+    --spacing8: 80px;
+    --spacing9: 96px;
+    --spacing10: 120px;
+
+    /* -----行高&字距基準----- */
+    --size_normal: 10px;
+    --size_basic: 0.1;
+
+}
+
+/* ------------基本元素設定------------ */
+html,
+body {
+    font-family: "Nanum Gothic", "微軟正黑體", sans-serif;
+    color: var(--grey, #545454ff);
+    height: 100%;
+    font-size: var(--normal);
+}
+
+a:link,
+a:active,
+a:visited {
+    color: var(--pink, #f18ab8ff);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--black, #000000ff);
+    text-decoration: underline;
+}
+
+/* -----常用元件設定----- */
+.h1 {
+    font-size: var(--h1);
+    font-weight: 800;
+    line-height: calc(var(--size_basic) * 25);
+    margin: calc(var(--size_normal) *2) 0;
+}
+
+h2 {
+    font-size: var(--h2);
+    font-weight: 800;
+    line-height: calc(var(--size_basic) * 20);
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: var(--h3);
+    font-weight: 800;
+    line-height: calc(var(--size_basic) * 20);
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: var(--h4);
+    font-weight: 400;
+    line-height: calc(var(--size_basic) * 20);
+}
+
+h5 {
+    font-size: var(--h5);
+    font-weight: 400;
+    line-height: calc(var(--size_basic) * 20);
+}
+
+h6 {
+    font-size: var(--h6);
+    font-weight: 400;
+    line-height: calc(var(--size_basic) * 20);
+}
+
+p {
+    font-size: var(--normal);
+    line-height: calc(var(--size_basic) * 13);
+}
+
+small {
+    font-size: var(--small);
+    line-height: calc(var(--size_basic) * 11);
+}
+
+/* -------文字排版樣式-------*/
+/*----文字尺寸---- */
+.font-size-12 {
+    font-size: var(--mini, 12px) !important;
+}
+
+.font-size-14 {
+    font-size: var(--small, 14px) !important;
+}
+
+.font-size-16 {
+    font-size: var(--normal, 16px) !important;
+}
+
+.font-size-18 {
+    font-size: var(--h6, 18px) !important;
+}
+
+.font-size-20 {
+    font-size: var(--h5, 20px) !important;
+}
+
+.font-size-22 {
+    font-size: var(--h4, 22px) !important;
+}
+
+.font-size-24 {
+    font-size: var(--h3, 24px) !important;
+}
+
+.font-size-26 {
+    font-size: var(--h2, 26px) !important;
+}
+
+.font-size-30 {
+    font-size: var(--h1, 30px) !important;
+}
+
+.font-size-36 {
+    font-size: calc(var(--h6, 18px)*2) !important;
+}
+
+.font-size-40 {
+    font-size: calc(var(--size_normal, 10px)*4) !important;
+}
+
+.font-size-50 {
+    font-size: calc(var(--size_normal, 10px)*5) !important;
+}
+
+.font-size_smaller {
+    font-size: 80% !important;
+}
+
+.font-size_bigger {
+    font-size: 120% !important;
+}
+
+/* ----文字粗體---- */
+.font-weight_800 {
+    font-weight: 800;
+}
+
+.font-weight_700 {
+    font-weight: 700;
+}
+
+.font-weight_600 {
+    font-weight: 600;
+}
+
+.font-weight_400 {
+    font-weight: 400;
+}
+
+.font-weight_bolder {
+    font-weight: bolder;
+}
+
+.font-weight_normal {
+    font-weight: normal;
+}
+
+/* ----文字大小寫---- */
+.text_uppercase {
+    text-transform: uppercase;
+}
+
+.text_lowercase {
+    text-transform: lowercase;
+}
+
+.text_nocase {
+    text-transform: none;
+}
+
+/* ----文字色彩---- */
+.color_black {
+    color: var(--black, #000000ff);
+}
+
+.color_grey {
+    color: var(--grey, #545454ff);
+}
+
+.color_silver {
+    color: var(--silver, #6f6f6fff);
+}
+
+.color_spaninsh {
+    color: var(--spaninsh, #999999ff);
+}
+
+.color_gainsboro {
+    color: var(--gainsboro, #e0e0e0ff);
+}
+
+.color_white {
+    color: var(--white, #ffffffff);
+}
+
+.color_pink {
+    color: var(--pink, #f18ab8ff);
+}
+
+.color_mimi {
+    color: var(--mimi, #f9cddeff);
+}
+
+.color_piggy {
+    color: var(--piggy, #fae4eeff);
+}
+
+.color_red {
+    color: var(--red, #ff0000ff);
+}
+
+.color_empty {
+    color: var(--empty, #ffffff00);
+}
+
+.color_info {
+    color: var(--pink, #2f80edff);
+}
+
+.color_success {
+    color: var(--pink, #27ae60ff);
+}
+
+.color_warning {
+    color: var(--pink, #e2b93bff);
+}
+
+.color_error {
+    color: var(--pink, #eb5757ff);
+}
+
+.color_melon {
+    color: var(--pink, #ffb5a7ff);
+}
+
+.color_pale-dogwood {
+    color: var(--pink, #FCD5CEff);
+}
+
+.color_seashell {
+    color: var(--pink, #F8EDEBff);
+}
+
+.color_champagne-pink {
+    color: var(--pink, #F9DCC4ff);
+}
+
+.color_peach {
+    color: var(--pink, #FEC89Aff);
+}
+
+/*-------組件樣式顏色-------*/
+/* ----按鈕顏色---- */
+
+
+/* ------提示文字------ */
+.tooltip{
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext{
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--pink, #f18ab8ff);
+    color: var(--white, #ffffffff);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    /* Position the tooltip */
+    position:absolute;
+    z-index: 10000;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* ------作用文字------ */
+.highlight_txt {
+    border-bottom: 3px solid var(--spaninsh, #999999ff);
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    color: var(--pink, #f18ab8ff) !important;
+}
+
+.active_txt {
+    padding: var(--size_normal, 10px);
+    background-color: var(--pink, #f18ab8ff);
+    color: var(--white, #ffffffff);
+}
+
+.text-align_center {
+    text-align: center;
+}
+
+/* ------首字放大------ */
+.first-letter-effect::first-letter {
+    font-size: 200%;
+    color: var(--pink, #f18ab8ff);
+    font-weight: bold;
+}
+
+
+/* -------區塊樣式設定------- */
+/* -----背景顏色設定----- */
+.bg_balck {
+    background-color: var(--black, #000000ff);
+}
+
+.bg_grey {
+    background-color: var(--grey, #545454ff);
+}
+
+.bg_silver {
+    background-color: var(--silver, #6f6f6fff);
+}
+
+.bg_spaninsh {
+    background-color: var(--spaninsh, #999999ff);
+}
+
+.bg_gainsboro {
+    background-color: var(--gainsboro, #e0e0e0ff);
+}
+
+.bg_white {
+    background-color: var(--white, #ffffffff);
+}
+
+.bg_pink {
+    background-color: var(--pink, #f18ab8ff);
+}
+
+.bg_mimi {
+    background-color: var(--mimi, #f9cddeff);
+}
+
+.bg_piggy {
+    background-color: var(--piggy, #fae4eeff);
+}
+
+.bg_red {
+    background-color: var(--red, #ff0000ff);
+}
+
+
+/* -----圖片效果設定----- */
+.flip_img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.vertical_align-middle {
+    vertical-align: middle;
+}
+
+.vertical_align-bottom {
+    vertical-align: bottom;
+}
+
+.pic_width-350 {
+    width: calc(var(--size_normal, 10px)*35);
+    height: auto;
+}
+
+.pic_transform {
+    transform: scale(1, 1);
+    transition: transform 0.4s linear;
+}
+
+.pic_transform:hover {
+    transform: scale(1.5, 1.5);
+    opacity: 0.6;
+    box-shadow: 0 0 10px 5px var(--grey, #545454ff);
+    z-index: 1000;
+    position: relative;
+    /*position要啟用，z-index才有作用*/
+}
+
+.pic_drop-shadow {
+    filter: drop-shadow(5px 5px 5px var(--grey, #545454ff))
+}
+
+/* -----背景圖位置----- */
+.bg_top {
+    background-position: top;
+}
+
+.bg_bottom {
+    background-position: bottom;
+}
+
+.overflow_hidden {
+    overflow: hidden;
+}
+
+
+/* -----邊框設定----- */
+.border-radius_15 {
+    border-radius: 15px;
+}
+
+.border-radius_30 {
+    border-radius: 30px;
+}
+
+.border-radius_all {
+    border-radius: 100%;
+}
+
+.border_bottom-5 {
+    border-bottom: 5px solid var(--pink, #f18ab8ff);
+}
+
+.boxshadow_pink-5 {
+    box-shadow: 0 0 5px 10px var(--pink, #f18ab8ff);
+}
+
+.boxshadow_pink-10 {
+    box-shadow: 0 0 10px 10px var(--pink, #f18ab8ff);
+}
+
+.boxshadow_pink-15 {
+    box-shadow: 0 0 15px 10px var(--pink, #f18ab8ff);
+}
+
+/* ------段落設定------ */
+/* -----行高設定----- */
+.line-height_13 {
+    line-height: calc(var(--size_basic, 0.1)*13);
+}
+
+.line-height_15 {
+    line-height: calc(var(--size_basic, 0.1)*15);
+}
+
+.line-height_1 {
+    line-height: calc(var(--size_basic, 0.1)*10);
+}
+
+.line-height_2 {
+    line-height: calc(var(--size_basic, 0.1)*20);
+}
+
+.line-height_3 {
+    line-height: calc(var(--size_basic, 0.1)*30);
+}
+
+
+
+.margin-top_50{
+    margin-top: 50px;
+}
+
+.margin-bottom_20{
+    margin-bottom: 20px;
+
+}
+
+/* -----分欄設定----- */
+.column-count_1{
+    column-count: 1;
+}
+
+.column-count_2{
+    column-count: 2;
+}
+
+.column-count_3{
+    column-count: 3;
+}
+
+.column-count_4{
+    column-count: 4;
+}
+
+.column-count_5{
+    column-count: 5;
+}
+
+
+.column-gap_50{
+    column-gap: 50px;
+}
+
+.column-gap_40{
+    column-gap: 40px;
+}
+
+.column-gap_30{
+    column-gap: 30px;
+}
+
+.column-gap_20{
+    column-gap: 20px;
+}
+
+.column-gap_10{
+    column-gap: 10px;
+}
+
+.column-gap_0{
+    column-gap: 0;
+}
+
+.column-rule{
+    column-rule: 1px solid var(--spaninsh, #999999ff);
+}
+
+
+/* ----浮動設定---- */
+.float_left{
+    float: left;
+}
+
+.float_right{
+    float: right;
+}
+
+.float_none{
+    float: none;
+}
+
+.clear_both{
+    clear: both;
+}
+
+/* ----Position設定---- */
+.position_absolute-bottom-20{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.position_absolute-center{
+    position: absolute;
+    z-index: 99;
+    bottom: 0;
+    left: 28px;
+}
+
+.position_relative{
+    position: relative;
+}
+
+/* ----Display設定---- */
+.display_block{
+    display: block !important; 
+}
+

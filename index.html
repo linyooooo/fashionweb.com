@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="fashion village, fashion-village">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale:1.0, maximum-scale:2.0 ">
+    <meta name="author" content="Bella, bella_3529@yahoo.com.tw">
+    <title>Welcome to Fashion Village</title>
+
+    <!-- 網路字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!-- 網站小圖示 -->
+    <link rel="icon" href="images/icon-dress2.png">
+    <!-- 加入手機主畫面捷徑的圖示 -->
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- Google圖標 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- 自訂圖標 -->
+    <link href="css/iconstyle.css" rel="stylesheet">
+
+    <!-- 歸零CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 變數設定CSS -->
+    <link rel="stylesheet" href="css/basic.css">
+    <!-- 版面設定CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 媒體查詢 -->
+    <link rel="stylesheet" href="css/style_m.css" media="(min-width:980px) and (max-width:1239px)">
+    <link rel="stylesheet" href="css/style_s.css" media="(max-width:979px)">
+
+
+    <!-- 橫幅輪播CSS宣告 -->
+    <link rel="stylesheet" href="css/slide.css">
+
+    <!-- JQ共用參數庫 for 橫幅 & Gotop -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- 橫幅輪播JS宣告 -->
+    <script src="js/slide.min.js"></script>
+
+    <!-- Gotop JS宣告 -->
+    <script src="js/gotop.js"></script>
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <h1 title="Go back to Homepage"><span>Fashion Village</span><a href="index.html"></a></h1>
+        </div>
+        <div id="nav">
+            <!-- 上層固定選單 -->
+            <nav id="top-nav">
+                <ul>
+                    <li><a href="#0"><span class="material-icons">app_shortcut</span><span class="topnav-text">Go to
+                                App</span></a></li>
+                    <li><a href="#0"><span class="material-icons">storefront</span><span class="topnav-text">Online
+                                Shop</span></a></li>
+                </ul>
+            </nav>
+
+            <nav id="main-nav">
+                <!-- 漢堡選單 -->
+                <span class="tip">Click to Open Nevigation.</span>
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><!--漢堡三條線-->
+                    <div></div>
+                </div>
+
+                <div class="menu"><!--整體選單範圍-->
+                    <!-- 主選單 -->
+                    <div><!-- 設定選單背景色 -->
+                        <div><!-- 選單內容外框架 -->
+                            <ul><!-- 原選單 -->
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="stores.html">Stores</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="news.html">News<span class="material-icons">arrow_drop_down</span></a>
+                                    <ul>
+                                        <li><a href="news_lady.html">Lady</a></li>
+                                        <li><a href="news_girl.html">Girl</a></li>
+                                        <li><a href="news_child.html">Child</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                                <!-- SNS選單 -->
+                                <p id="nav-sns">
+                                    <a href="https://www.facebook.com/fashionvillage" target="_blank"><span
+                                            class="icon-fb"></span></a>
+                                    <a href="https://www.instagram.com/fashionvillage" target="_blank"><span
+                                            class="icon-ig"></a>
+                                    <a href="https://www.linkedin.com/fashionvillage" target="_blank"><span
+                                            class="icon-linkedin"></a>
+                                    <a href="https://www.skype.com/" target="_blank"><span class="icon-skype"></a>
+                                    <a href="https://www.twitter.com/fashionvillage" target="_blank"><span
+                                            class="icon-twitter"></a>
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 橫幅圖片 -->
+    <div id="banner">
+        <div id="slide2d" class="slide-carousel slide-2d">
+            <ul class="item-list">
+                <li class="item0">
+                    <div class="item-content">
+                        <a href="#0">
+                            <picture>
+                                <source media="(min-width:768px) and (max-width:959px)"
+                                    srcset="images/banner1-tablet.jpg">
+                                <source media="(max-width:767px)" srcset="images/banner1-mobile.jpg">
+                                <img src="images/banner1.jpg" alt="Fashion Village">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="item1">
+                    <div class="item-content">
+                        <a href="#0">
+                            <picture>
+                                <source media="(min-width:768px) and (max-width:959px)"
+                                    srcset="images/banner11-tablet.jpg">
+                                <source media="(max-width:767px)" srcset="images/banner11-mobile.jpg">
+                                <img src="images/banner11.jpg" alt="Fashion Village">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="item2">
+                    <div class="item-content">
+                        <a href="#0">
+                            <picture>
+                                <source media="(min-width:768px) and (max-width:959px)"
+                                    srcset="images/banner12-tablet.jpg">
+                                <source media="(max-width:767px)" srcset="images/banner12-mobile.jpg">
+                                <img src="images/banner12.jpg" alt="Fashion Village">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+                <li class="item3">
+                    <div class="item-content">
+                        <a href="#0">
+                            <picture>
+                                <source media="(min-width:768px) and (max-width:959px)"
+                                    srcset="images/banner13-tablet.jpg">
+                                <source media="(max-width:767px)" srcset="images/banner13-mobile.jpg">
+                                <img src="images/banner13.jpg" alt="Fashion Village">
+                            </picture>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 指示小圖示 -->
+            <div class="indicator-list">
+                <a href="#0" data-slide-index="0" class="selected"></a>
+                <a href="#0" data-slide-index="1"></a>
+                <a href="#0" data-slide-index="2"></a>
+                <a href="#0" data-slide-index="3"></a>
+            </div>
+
+            <!-- 左右控制器 -->
+            <div class="controls">
+
+                <!-- 使用自訂圖標字型 -->
+                <a class="item-prev glyphicon glyphicon-menu-left" href="#0"></a>
+                <a class="item-next glyphicon glyphicon-menu-right" href="#0"></a>
+            </div>
+
+            <!-- 說明文字/無文字只有黑色半透明底塊 -->
+            <div class="desc">
+
+            </div>
+        </div>
+    </div>
+
+    <!-- 內容區塊 -->
+    <div id="main-content">
+        <div class="slogan">
+            <h2>Who Are FashionVillage?</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto fuga voluptas assumenda ad atque
+                voluptates.</p>
+            <p>Repellendus facilis vitae fugit dolorum iure delectus quisquam debitis atque molestias laboriosam!</p>
+            <p>Sit aliquam rem voluptas quos numquam a esse, illo explicabo repudiandae similique, necessitatibus at
+                voluptatibus voluptate nobis atque facilis repellat consectetur nam.</p>
+            <p>Assumenda, cum dolorum. Cum magnam rerum pariatur corporis vero facere illum incidunt odio dolorem,
+                harum, quod veritatis blanditiis reiciendis nisi minus veniam? Autem animi excepturi dolore soluta.
+                Deserunt at exercitationem illum suscipit.</p>
+        </div>
+        <div class="post">
+            <div class="post_title">Girls Fashion Dress</div>
+            <div class="post_img"><a href="products.html"><img src="images/style01.jpg" alt="Fashion Village"
+                        title="Click to see more"></a></div>
+            <div class="post_text">We are always ready with casual wear for school or playtime for your little girls
+                with items. Et molestiae debitis est numquam, perspiciatis distinctio sed. Pariatur provident culpa earum.</div>
+            <div class="more"><a href="products.html">View more...<i class="material-icons"> double_arrow</i></a></div>
+        </div>
+        <div class="post">
+            <div class="post_title">Girls Fashion Dress</div>
+            <div class="post_img"><a href="products.html"><img src="images/style02.jpg" alt="Fashion Village"
+                        title="Click to see more"></a></div>
+            <div class="post_text">We are always ready with casual wear for school or playtime for your little girls
+                with items. Illum quis ullam accusamus ea doloribus repellendus modi fugiat numquam animi eaque.</div>
+            <div class="more"><a href="products.html">View more...<i class="material-icons"> double_arrow</i></a></div>
+        </div>
+
+    </div>
+
+    <!-- 4張圖區塊 -->
+    <div id="picshow">
+        <!-- (a[href="products.html"]>img[src=images/][alt="Fashion Village"][title="Click to see more"])*4 -->
+        <a href="products.html"><img src="images/picshow1.jpg" alt="Fashion Village" title="Click to see more"></a>
+        <a href="products.html"><img src="images/picshow2.jpg" alt="Fashion Village" title="Click to see more"></a>
+        <a href="products.html"><img src="images/picshow3.jpg" alt="Fashion Village" title="Click to see more"></a>
+        <a href="products.html"><img src="images/picshow4.jpg" alt="Fashion Village" title="Click to see more"></a>
+    </div>
+
+    <!-- 內嵌影片 -->
+    <div id="movie">
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/d-3cEQ1d1E4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/KwpN7tOzAaM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <!-- 頁尾區塊 -->
+    <div id="footer">
+        <div id="small-logo"><img src="images/logo.png" alt="FashionVillage"></div>
+        <div id="copyright">
+            <small>Copyright ©2023 Fashion Village</small>
+            <a href="tel:+886-7-1234567">tel:+886-7-1234567</a>
+        </div>
+
+    </div>
+
+    <!-- GoTop區塊 -->
+    <div id="gotop" onclick="topFuntion()">
+        <span class="material-icons">arrow_circle_up</span>
+        <span class="gotip">Go Back To Top</span>
+
+    </div>
+
+    <!-- <script>
+        var myButton=document.getElementById("gotop"); //設定變數指定gotop
+        window.onscroll=function(){scrollFuntion()}; //設定畫面捲動時執行函式scrollFuntion
+
+        function scrollFuntion(){ //設定捲動條件
+            if(document.body.scrollTop > 400 || document.documentElement.scrollTop >400) {
+                myButton.style.display="block";
+            }else{
+                myButton.style.display="none";
+            }
+        }
+
+        function topFuntion(){
+            document.body.scrollTop=0;
+            document.documentElement.scrollTop=0;
+        }
+    </script>  -->
+
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="fashion village, fashion-village">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale:1.0, maximum-scale:2.0 ">
+    <meta name="author" content="Bella, bella_3529@yahoo.com.tw">
+    <title>Welcome to Fashion Village - Hot News</title>
+
+    <!-- 網路字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <!-- 網站小圖示 -->
+    <link rel="icon" href="images/icon-dress2.png">
+    <!-- 加入手機主畫面捷徑的圖示 -->
+    <link rel="apple-touch-icon" href="images/logo.png">
+
+    <!-- Google圖標 -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- 自訂圖標 -->
+    <link href="css/iconstyle.css" rel="stylesheet">
+
+    <!-- 歸零CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <!-- 變數設定CSS -->
+    <link rel="stylesheet" href="css/basic.css">
+    <!-- 版面設定CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- 媒體查詢 -->
+    <link rel="stylesheet" href="css/style_m.css" media="(min-width:980px) and (max-width:1239px)">
+    <link rel="stylesheet" href="css/style_s.css" media="(max-width:979px)">
+
+    <!-- 載入共用JQ -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+    <!-- gotop JS -->
+    <script src="js/gotop.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="logo">
+            <!-- h1>span{Fashion Village}+a[href="index.html"] SEO的灰帽手法 將關鍵字藏在loge的span中-->
+            <h1 title="Go back to Homepage"><span>Fashion Village</span><a href="index.html"></a></h1>
+        </div>
+        <div id="nav">
+            <!-- 上層固定選單 -->
+            <nav id="top-nav">
+                <ul>
+                    <li><a href="#0"><span class="material-icons">app_shortcut</span><span class="topnav-text">Go to
+                                App</span></a></li>
+                    <li><a href="#0"><span class="material-icons">storefront</span><span class="topnav-text">Online
+                                Shop</span></a></li>
+                </ul>
+            </nav>
+
+            <nav id="main-nav">
+                <!-- 漢堡選單 -->
+                <span class="tip">Click to Open Nevigation.</span>
+                <input type="checkbox" class="toggler">
+                <div class="hamburger"><!--漢堡三條線-->
+                    <div></div>
+                </div>
+
+                <div class="menu"><!--整體選單範圍-->
+                    <!-- 主選單 -->
+                    <div><!-- 設定選單背景色 -->
+                        <div><!-- 選單內容外框架 -->
+                            <ul><!-- 原選單 -->
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="stores.html">Stores</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="news.html" class="highlight_txt">News<span
+                                            class="material-icons">arrow_drop_down</span></a>
+                                    <ul>
+                                        <li><a href="news_lady.html">Lady</a></li>
+                                        <li><a href="news_girl.html">Girl</a></li>
+                                        <li><a href="news_child.html">Child</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                                <!-- SNS選單 -->
+                                <p id="nav-sns">
+                                    <a href="https://www.facebook.com/fashionvillage" target="_blank"><span
+                                            class="icon-fb"></span></a>
+                                    <a href="https://www.instagram.com/fashionvillage" target="_blank"><span
+                                            class="icon-ig"></a>
+                                    <a href="https://www.linkedin.com/fashionvillage" target="_blank"><span
+                                            class="icon-linkedin"></a>
+                                    <a href="https://www.skype.com/" target="_blank"><span class="icon-skype"></a>
+                                    <a href="https://www.twitter.com/fashionvillage" target="_blank"><span
+                                            class="icon-twitter"></a>
+                                </p>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 橫幅圖片 -->
+    <div class="hero-image"
+        style="background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.6)) ,url(images/banner5.jpg)">
+        <div class="hero-text">
+            <h1 class="font-size-50 line-height_15">Fashion Village</h1>
+            <p class="margin-bottom_20">Shop Like a Vogue editor.</p>
+            <button>Visit it!</button>
+        </div>
+
+    </div>
+
+    <!-- 內容區塊 -->
+    <div id="main-content">
+        <!-- 圖文消息1 -->
+        <div class="newspost">
+            <!-- 左方圖片 -->
+            <div class="news_pic border-radius_30">
+                <a href="#"><img src="images/newspic1.jpg" alt="" class="flip_img"></a>
+            </div>
+            <!-- 右方文字 -->
+            <div class="news_txt">
+                <!-- 標籤設計 -->
+                <div class="category">
+                    <svg class="myicon" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                        viewBox="0 -960 960 960">
+                        <path
+                            d="M120-40v-700q0-24 18-42t42-18h480q24 0 42.5 18t18.5 42v700L420-167 120-40Zm60-91 240-103 240 103v-609H180v609Zm600 1v-730H233v-60h547q24 0 42 18t18 42v730h-60ZM180-740h480-480Z" />
+                    </svg>
+                    <a href="#">Fashion</a>
+                    <a href="#">Girl</a>
+                    <!-- 日期設定 -->
+                    <span class="date">
+                        <span class="date_day">19</span>
+                        <span class="date_month">Aug</span>
+                    </span>
+                </div>
+                <h4>Asperiores, nequeapiente incidunt mus, dignissimos iure?</h4>
+                <p class="text-align_justify">Maiores nobis aperiam facilis ut, recusandae impedit optio
+                    exercitationem mt sed pariatur, iure, expedita porro, praesentium in commodi quisquam magni
+                    voluptatibus vitae sit earum iusto.
+                </p>
+                <a href="#" class="more">More...</a>
+            </div>
+        </div>
+
+        <!-- 圖文消息2 -->
+        <div class="newspost">
+            <!-- 左方圖片 -->
+            <div class="news_pic border-radius_30">
+                <a href="#"><img src="images/newspic2.jpg" alt="" class="flip_img"></a>
+            </div>
+            <!-- 右方文字 -->
+            <div class="news_txt">
+                <!-- 標籤設計 -->
+                <div class="category">
+                    <svg class="myicon" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                        viewBox="0 -960 960 960">
+                        <path
+                            d="M120-40v-700q0-24 18-42t42-18h480q24 0 42.5 18t18.5 42v700L420-167 120-40Zm60-91 240-103 240 103v-609H180v609Zm600 1v-730H233v-60h547q24 0 42 18t18 42v730h-60ZM180-740h480-480Z" />
+                    </svg>
+                    <a href="#">Fashion</a>
+                    <a href="#">Girl</a>
+                    <!-- 日期設定 -->
+                    <span class="date">
+                        <span class="date_day">19</span>
+                        <span class="date_month">Aug</span>
+                    </span>
+                </div>
+                <h4>Asperiores, nequeapiente incidunt mus, dignissimos iure?</h4>
+                <p class="text-align_justify">Nobis aperiam facilis ut, recusandae impedit optio
+                    exercitationem mt sed pariatur, iure, expedita porro, praesentium in commodi quisquam magni
+                    voluptatibus vitae sit earum iusto.
+                </p>
+                <a href="#" class="more">More...</a>
+            </div>
+        </div>
+
+        <!-- 圖文消息3 -->
+        <div class="newspost">
+            <!-- 左方圖片 -->
+            <div class="news_pic border-radius_30">
+                <a href="#"><img src="images/newspic3.jpg" alt="" class="flip_img"></a>
+            </div>
+            <!-- 右方文字 -->
+            <div class="news_txt">
+                <!-- 標籤設計 -->
+                <div class="category">
+                    <svg class="myicon" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                        viewBox="0 -960 960 960">
+                        <path
+                            d="M120-40v-700q0-24 18-42t42-18h480q24 0 42.5 18t18.5 42v700L420-167 120-40Zm60-91 240-103 240 103v-609H180v609Zm600 1v-730H233v-60h547q24 0 42 18t18 42v730h-60ZM180-740h480-480Z" />
+                    </svg>
+                    <a href="#">Fashion</a>
+                    <a href="#">Girl</a>
+                    <!-- 日期設定 -->
+                    <span class="date">
+                        <span class="date_day">19</span>
+                        <span class="date_month">Aug</span>
+                    </span>
+                </div>
+                <h4>Reprehenderit illanditiis praesentium numquam vero. <br> Possimus, dignissimos iure?</h4>
+                <p class="text-align_justify">Esadr maiores nobis aperiam facilis ut, recusandae impedit optio
+                    exercitationem mt sed pariatur, iure, expedita porro, praesentium in commodi quisquam magni
+                    voluptatibus vitae sit earum iusto.
+                </p>
+                <a href="#" class="more">More...</a>
+            </div>
+        </div>
+
+        <!-- 圖文消息4 -->
+        <div class="newspost">
+            <!-- 左方圖片 -->
+            <div class="news_pic border-radius_30">
+                <a href="#"><img src="images/newspic4.jpg" alt="" class="flip_img"></a>
+            </div>
+            <!-- 右方文字 -->
+            <div class="news_txt">
+                <!-- 標籤設計 -->
+                <div class="category">
+                    <svg class="myicon" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                        viewBox="0 -960 960 960">
+                        <path
+                            d="M120-40v-700q0-24 18-42t42-18h480q24 0 42.5 18t18.5 42v700L420-167 120-40Zm60-91 240-103 240 103v-609H180v609Zm600 1v-730H233v-60h547q24 0 42 18t18 42v730h-60ZM180-740h480-480Z" />
+                    </svg>
+                    <a href="#">Fashion</a>
+                    <a href="#">Girl</a>
+                    <!-- 日期設定 -->
+                    <span class="date">
+                        <span class="date_day">19</span>
+                        <span class="date_month">Aug</span>
+                    </span>
+                </div>
+                <h4>Llum! Blanditiis praesentium numquam vero. <br> Possimus, dignissimos iure?</h4>
+                <p class="text-align_justify">Smaiores nobis aperiam facilis ut, recusandae impedit optio
+                    exercitationem mt sed pariatur, iure, expedita porro, praesentium in commodi quisquam magni
+                    voluptatibus vitae sit earum iusto.
+                </p>
+                <a href="#" class="more">More...</a>
+            </div>
+        </div>
+
+        <!-- 圖文消息5 -->
+        <div class="newspost">
+            <!-- 左方圖片 -->
+            <div class="news_pic border-radius_30">
+                <a href="#"><img src="images/newspic5.jpg" alt="" class="flip_img"></a>
+            </div>
+            <!-- 右方文字 -->
+            <div class="news_txt">
+                <!-- 標籤設計 -->
+                <div class="category">
+                    <svg class="myicon" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em"
+                        viewBox="0 -960 960 960">
+                        <path
+                            d="M120-40v-700q0-24 18-42t42-18h480q24 0 42.5 18t18.5 42v700L420-167 120-40Zm60-91 240-103 240 103v-609H180v609Zm600 1v-730H233v-60h547q24 0 42 18t18 42v730h-60ZM180-740h480-480Z" />
+                    </svg>
+                    <a href="#">Fashion</a>
+                    <a href="#">Girl</a>
+                    <!-- 日期設定 -->
+                    <span class="date">
+                        <span class="date_day">19</span>
+                        <span class="date_month">Aug</span>
+                    </span>
+                </div>
+                <h4>Asperiores, nequeapienteo. Possimus, <br> dignissimos iure?</h4>
+                <p class="text-align_justify">Soluta magni modi et eius sapiente repudiandae ipsa, ipsam molestiae
+                    consectetur. Quo id, evpariatur, iure, expedita porro, praesentium in commodi quisquam magni
+                    voluptatibus vitae sit earum iusto.
+                </p>
+                <a href="#" class="more">More...</a>
+            </div>
+        </div>
+
+        <!-- 頁面導覽 純粹數字-->
+        <!-- <div id="nav_bar">
+            <a href="#0" class="current-icon">1</a>
+            <a href="#p2">2</a>
+            <a href="#p3">3</a>
+            <a href="#p4">4</a>
+            <a href="#p5">5</a>
+        </div> -->
+
+        <!-- 頁面導覽 純粹數字-->
+        <div id="nav_bar">
+
+            <!--左邊箭頭-->
+            <a href="#" class="tooltip">
+                <i class="icon-first_page"></i>
+                <span class="tooltiptext">Previous 5 Pages</span>
+            </a>
+            <a href="#"><span class="icon-chevron_left"></span></a>
+
+            <!--數字區-->
+            <a href="#"><span class="icon-num current-icon">5</span></a>
+            <a href="#"><span class="icon-num">6</span></a>
+            <a href="#"><span class="icon-num">7</span></a>
+            <a href="#"><span class="icon-num">8</span></a>
+            <a href="#"><span class="icon-num">9</span></a>
+
+
+            <!--右邊箭頭-->
+            <a href="#"><span class="icon-chevron_right"></span></a>
+            <a href="#" class="tooltip">
+                <i class="icon-last_page"></i>
+                <span class="tooltiptext">Following 5 Pages</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <!-- 頁尾區塊 -->
+    <div id="footer">
+        <div id="small-logo"><img src="images/logo.png" alt="FashionVillage"></div>
+        <div id="copyright">
+            <small>Copyright ©2023 Fashion Village</small>
+            <a href="tel:+886-7-1234567">tel:+886-7-1234567</a>
+        </div>
+        <div id="sns">
+            <a href="https://www.facebook.com/fashionvillage" target="_blank"><span class="icon-fb"></span></a>
+            <a href="https://www.instagram.com/fashionvillage" target="_blank"><span class="icon-ig"></a>
+            <a href="https://www.linkedin.com/fashionvillage" target="_blank"><span class="icon-linkedin"></a>
+            <a href="https://www.skype.com/" target="_blank"><span class="icon-skype"></a>
+            <a href="https://www.twitter.com/fashionvillage" target="_blank"><span class="icon-twitter"></a>
+        </div>
+    </div>
+
+    <!-- GoTop區塊 -->
+    <div id="gotop" onclick="topFuntion()">
+        <span class="material-icons">arrow_circle_up</span>
+        <span class="gotip">Go Back To Top</span>
+    </div>
+
+</body>
+
+</html>
