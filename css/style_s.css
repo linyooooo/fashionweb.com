@@ -34,7 +34,7 @@
 }
 
 @media (max-width:520px){
-    #nav{
+    #nav {
         width: 120px;
     }
 
@@ -45,23 +45,23 @@
         float: left;
     }
 
-    #top-nav .topnav-text{
+    #top-nav .topnav-text {
         display: none;
     }
 }
 
-@media (max-width:400px){
-    #nav{
+@media (max-width:400px) {
+    #nav {
         width: 80px;
     }
 
-    #top-nav{
+    #top-nav {
         display: none;
     }
 }
 
 /* -------主選單設定------- */
-#main-nav{
+#main-nav {
     float: none;
     position: fixed;
     top: 40px;
@@ -70,11 +70,11 @@
     font-size: var(--h6);
 }
 
-#main-nav:hover .tip, #main-nav:active .tip{
+#main-nav:hover .tip, #main-nav:active .tip {
     visibility: visible;
 }
 
-#main-nav a{
+#main-nav a {
     float: none;
     width: 100%;
     margin-left: 0;
@@ -90,17 +90,17 @@
     text-transform: uppercase;
 }
 
-#main-nav li{
+#main-nav li {
     float: none;
 }
 
-.highlight_txt{
+.highlight_txt {
     border-bottom: none;
     background-color: rgba(235, 87, 87, .3);
     color: var(--grey);
 }
 
-/* -------展開次選單------- */
+/* -------次選單------- */
 #main-nav li li a{
     display: block;
     margin-right: 40px;
@@ -109,19 +109,19 @@
 }
 
 @media (max-width:500px) {
-    #main-nav li li a{
+    #main-nav li li a {
         margin-right: 20px;
     }
 }
 
 @media (max-width:425px) {
-    #main-nav li li a{
+    #main-nav li li a {
         margin-right: 10px;
     }
 }
 
 @media (max-width:375px) {
-    #main-nav li li a{
+    #main-nav li li a {
         margin-right: 0;
     }
 }
@@ -133,7 +133,7 @@
 }
 
 #main-nav ul ul{
-    transform: translate(450%, -67%);
+    transform: translate(450%, -67%);  /*左右 上下*/
     visibility: hidden;
 }
 
@@ -154,7 +154,7 @@
 }
 
 /* -------經過展開次選單------- */
-#main-nav li:hover > ul{
+#main-nav li:hover > ul {
     visibility: visible;
 }
 
@@ -190,7 +190,7 @@
     justify-content: center;
 }
 
-.hamburger > div{
+.hamburger > div {
     position: relative;
     width: 100%;
     height: 2px;
@@ -246,7 +246,7 @@
 }
 
 /* ---選單內容格式--- */
-.menu{
+.menu {
     position: fixed;
     right: 0;
     top: 0;
@@ -260,7 +260,7 @@
 }
 
 /* ---關閉時選單背景大小及動畫--- */
-.menu > div{
+.menu > div {
     background-color: rgba(255,255,255,.9);
     border-radius: 50%;
     width: 300vw;
@@ -300,27 +300,29 @@
 
 
 /* ---------頁尾設定--------- */
-#footer{
+#footer {
     width: 100%;
     margin: 30px auto;
     border-bottom: solid 15px var(--pink);
 }
 
-#small-logo, #sns{
+#small-logo, #sns {
     display: none;
 }
 
-#copyright small, #copyright a{
+#copyright small, #copyright a {
     padding-top: 10px;
     display: block;
 }
 
-#copyright{
+#copyright {
     text-align: center;
     width: 100%;
     font-size: var(--normal);
     padding-top: 0;
 }
+
+
 
 /* --------內容版面設定--------- */
 /* --------共用橫幅設定-------- */
